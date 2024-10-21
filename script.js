@@ -4,7 +4,7 @@ let result = '';
 
 // Object to store sum-to-phrase mappings
 const sumPhrases = {
-    '1+1': 'Ampogi ko',
+    '1+1': 'Ur so pretty',
     '140+3': 'I miss you',
     '2+2': 'I love you',
 };
@@ -60,6 +60,8 @@ function addPhrase(expression, phrase) {
 }
 
 // Example of adding new phrases
-addPhrase('3+5','I miss you so much');
-addPhrase('10+5', 'Why do are u so pretty?')
-addPhrase('5+1', 'OMG, SO PRETTY')
+addPhrase('3+5','Aguy, sakit non');
+addPhrase('10+5', 'Sakit sa ice')
+addPhrase('5+1', 'miss ya')
+addPhrase('7+1', 'Harry pogi')
+addPhrase('6+1', 'Chess us?')
