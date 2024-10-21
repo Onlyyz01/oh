@@ -6,10 +6,7 @@ let result = '';
 const sumPhrases = {
     '1+1': 'Ampogi ko',
     '140+3': 'I miss you',
-    '2+2': 'I love you'
-    '6+6': 'Si Harry panget',
-    '7+7': 'Success',
-    '10+8': 'Miss ko na po siya',
+    '2+2': 'I love you',
 };
 
 // Append value to input
@@ -63,5 +60,6 @@ function addPhrase(expression, phrase) {
 }
 
 // Example of adding new phrases
-addPhrase('7+2', 'You are awesome!');
-addPhrase('10+5', 'You are the best!');
+addPhrase('3+5','I miss you so much');
+addPhrase('10+5', 'Why do are u so pretty?')
+addPhrase('5+1', 'OMG, SO PRETTY')
