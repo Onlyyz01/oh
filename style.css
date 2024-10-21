@@ -1,0 +1,92 @@
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1c1c1c; /* Darker background for the body */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Neumorphic Calculator Container */
+.calculator {
+    width: 340px;
+    padding: 20px;
+    background-color: #333; /* Darker background for the calculator */
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #1a1a1a, -15px -15px 30px #4d4d4d; /* Adjusted shadows for dark theme */
+}
+
+/* Display Section Styling */
+.display {
+    margin-bottom: 20px;
+}
+
+input#display {
+    width: 88%;
+    height: 80px;
+    background-color: #444; /* Darker background for display */
+    color: #fff; /* White text for better contrast */
+    font-size: 2.5em;
+    text-align: right;
+    padding: 0 20px; /* Adjust padding for horizontal spacing */
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px #222, inset -5px -5px 10px #666; /* Darker inset shadows */
+    transition: box-shadow 0.2s;
+    line-height: 50px; /* Ensures vertical centering */
+}
+
+/* Buttons Grid Layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Button Base Styling */
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #333; /* Dark background for buttons */
+    color: #fff; /* White text for buttons */
+    border: none;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d; /* Neumorphic dark shadows */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button Press Animation */
+.btn:active {
+    box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
+    transform: scale(0.98);
+}
+
+/* Custom Button Colors */
+.btn.orange {
+    background-color: #ffa500;
+    color: white;
+}
+
+.btn.gray {
+    background-color: #555; /* Darker gray for function buttons */
+    color: white;
+}
+
+.btn.zero {
+    grid-column: span 2;
+    border-radius: 40px;
+}
+
+.btn.equal {
+    background-color: #ffa500;
+    color: white;
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d; /* Neumorphic hover shadows */
+    transform: translateY(-2px);
+}
