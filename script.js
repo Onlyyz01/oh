@@ -2,6 +2,13 @@
 let currentInput = '';
 let result = '';
 
+// Object to store sum-to-phrase mappings
+const sumPhrases = {
+    '1+1': 'Ampogi ko',
+    '3+5': 'I miss you',
+    '5+3': 'I love you'
+};
+
 // Append value to input
 function appendValue(value) {
     currentInput += value;
@@ -24,11 +31,15 @@ function clearLast() {
 // Perform calculation and show custom message
 function calculate() {
     try {
+        // Replace symbols for proper evaluation
         let expression = currentInput.replace('×', '*').replace('÷', '/');
 
-        // Check for special case 1 + 1
-        if (expression === '1+1') {
-            document.getElementById('display').value = 'Ampogi ko'; // Show the custom message
+        // Check if a custom phrase exists for the current expression (ignoring spaces)
+        let normalizedExpression = expression.replace(/\s/g, ''); // Remove spaces
+        
+        // Custom phrase handling
+        if (sumPhrases.hasOwnProperty(normalizedExpression)) {
+            document.getElementById('display').value = sumPhrases[normalizedExpression]; // Show the custom message
         } else {
             // Perform the calculation for other expressions
             result = eval(expression);
@@ -42,3 +53,12 @@ function calculate() {
         clearAll();
     }
 }
+
+// Function to easily add new phrases
+function addPhrase(expression, phrase) {
+    sumPhrases[expression] = phrase;
+}
+
+// Example of adding new phrases
+addPhrase('7+2', 'You are awesome!');
+addPhrase('10+5', 'You are the best!');
