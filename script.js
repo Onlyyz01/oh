@@ -64,4 +64,4 @@ addPhrase('3+5','Aguy, sakit non');
 addPhrase('10+5', 'Sakit sa ice');
 addPhrase('5+1', 'miss ya');
 addPhrase('7+1', 'Harry pogi');
-addPhrase('6+1', 'Chess us?');
+addPhrase('6+1', 'Chess us?')
