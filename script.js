@@ -5,8 +5,11 @@ let result = '';
 // Object to store sum-to-phrase mappings
 const sumPhrases = {
     '1+1': 'Ampogi ko',
-    '3+5': 'I miss you',
-    '5+3': 'I love you'
+    '140+3': 'I miss you',
+    '2+2': 'I love you'
+    '6+6': 'Si Harry panget',
+    '7+7': 'Success',
+    '10+8': 'Miss ko na po siya',
 };
 
 // Append value to input
